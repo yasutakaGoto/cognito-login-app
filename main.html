@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Cognito Login</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+
+    <div class="container">
+      <form id="form_singin">
+        <input type="text" placeholder="Username" id="name" name="username">
+        <input type="password" placeholder="Password" id="password" name="password">
+        <button type="button" id="login-button">Sign Up</button>
+			</form>
+			<form id="form_code">
+				<input type="text" placeholder="Confirm Code" id="code" name="code">
+				<button type="button" id="confirm-button">Confirm</button>
+				<button type="button" id="signin-button">Sign in</button>
+			</form>
+			<div class="block">
+				<button type="button" id="getuser-button">Get User</button>
+				<button type="button" id="getUserattr-button">Get UserAttr</button>
+				<form id="form_attr">
+						<input type="text" placeholder="Attribute Name" id="attr" name="attr">
+						<input type="text" placeholder="Value" id="attr_val" name="attr_val">
+						<button type="button" id="updateUserattr-button">Update Attr</button>
+				</form>
+			</div>
+		</div>
+
+  </div>
+
+  <script src="./lib/aws-cognito-sdk.min.js"></script>
+  <script src="./lib/amazon-cognito-identity.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+  </body>
+</html>
