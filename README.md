@@ -1,4 +1,7 @@
-# cognito-login-app
+# Set up
+index.js内3,4行目のUserPoolId,ClientIdの値をセット
+
+# Usage
 1. usename=メールアドレスでSing up
 2. メールで送られてきた認証コードを入力し、Confirm
 3. Sing in（ユーザーセッションの確立）
